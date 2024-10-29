@@ -25,7 +25,7 @@ Route::get('/somar', function(Request $request){
 });
 
 
-Route::prefix('/people')->group(function(){
+Route::prefix('/people')->group(function() { 
 
     Route::get('/list',
     [PeopleController::class, 'list']);
